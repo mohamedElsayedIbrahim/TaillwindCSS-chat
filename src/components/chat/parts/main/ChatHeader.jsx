@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import { FiMoreVertical } from "react-icons/fi";
+import { LayoutContext } from "../../../../context/LayoutContext";
 
 export default function ChatHeader() {
+  const {handelSideClick} = useContext(LayoutContext);
+  
   return <>
   
   <div className="px-20 py-4 h-10/100 flex items-center justify-between border-b border-b-gray-500">
@@ -11,8 +16,8 @@ export default function ChatHeader() {
     </div>
 
   </div>
-  <div className="block md:hidden">
-    test
+  <div onClick={handelSideClick} className="cursor-pointer block md:hidden">
+    <FiMoreVertical />
   </div>
   </div>
   </>

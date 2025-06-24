@@ -10,7 +10,7 @@ export default function InputButton() {
         MediaImageFile.current?.click();
     }
   return <>
-  <button onClick={handelButtonMediaClikc} class="px-7 overflow-hidden text-sm font-medium transition-transform rounded group text text-gray-400 bg-transparent hover:text-white cursor-pointer">
+  <button onClick={handelButtonMediaClikc} class="px-7 overflow-hidden text-sm font-medium transition-transform rounded group text text-gray-400 bg-transparent hover:text-white cursor-pointer ">
   <span><FiPaperclip /></span>
   <input type="file" className='hidden' ref={MediaImageFile} accept='image/*'/>
 </button>
