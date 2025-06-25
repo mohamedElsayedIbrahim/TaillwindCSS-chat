@@ -1,13 +1,11 @@
 .newMessege {
   display: flex;
+}
+.newMessege .messege {
   width: 35%;
   border-radius: 10px;
   padding: 5px;
   margin: 10px 0px;
-  clear: both;
-}
-.newMessege .messege {
-  width: 100%;
 }
 .newMessege .messege .messege-header {
   font-size: xx-small;
@@ -27,12 +25,16 @@
 }
 
 .newMessegeMy {
+  justify-content: start;
+}
+.newMessegeMy .messege {
   background-color: #999;
   color: #000;
-  float: left;
 }
 
 .newMessegeOther {
+  justify-content: end;
+}
+.newMessegeOther .messege {
   background-color: #333;
-  float: right;
 }/*# sourceMappingURL=chat.css.map */

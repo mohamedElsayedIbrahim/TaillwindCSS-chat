@@ -6,13 +6,10 @@ import { MessageContext } from "../../../../context/MessageContext";
 export default function ChatBody({user}) {
   const { handelAwayClick } = useContext(LayoutContext);
   const {messages} = useContext(MessageContext);
-  
-
-
 
 
   return <>
-    <div className='px-20 py-4 h-80/100'>
+    <div className='px-20 py-4 h-80/100 overflow-y-scroll'>
 
       <div onClick={handelAwayClick} className="chatContainer">
 
