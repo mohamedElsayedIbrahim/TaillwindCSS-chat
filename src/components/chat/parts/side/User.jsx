@@ -1,6 +1,12 @@
 import Button from '../../../Ui/Button'
 
 export default function User() {
+
+    const handleLogOut = () => {
+    localStorage.removeItem("USER-TELEGRAM");
+    location.replace(location.origin + "/user/profile");
+  };
+
   return <>
   
   <div className='text-center my-4 flex flex-col justify-center items-center'>
@@ -9,7 +15,7 @@ export default function User() {
   </div>
 
   <div className='my-4'>
-    <Button text="Back to profile" />
+    <Button text="Back to profile" eventClick={handleLogOut}/>
   </div>
   
   </>

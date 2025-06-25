@@ -1,0 +1,38 @@
+.newMessege {
+  display: flex;
+  width: 35%;
+  border-radius: 10px;
+  padding: 5px;
+}
+.newMessege .messege {
+  width: 100%;
+}
+.newMessege .messege .messege-header {
+  font-size: xx-small;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #4e4d4d;
+}
+.newMessege .messege .messege-main {
+  margin: 8px 0px;
+  font-weight: 700;
+}
+.newMessege .messege .messege-bottom {
+  font-size: xx-small;
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid #4e4d4d;
+}
+
+.newMessegeMy {
+  background-color: #999;
+  color: #000;
+  float: left;
+  clear: both;
+}
+
+.newMessegeOther {
+  background-color: #333;
+  float: right;
+  clear: both;
+}/*# sourceMappingURL=chat.css.map */

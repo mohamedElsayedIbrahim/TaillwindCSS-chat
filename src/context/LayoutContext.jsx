@@ -22,7 +22,6 @@ const handelAwayClick = ()=>{
     if (document.getElementById('sideRef').dataset.show === '1') {
         document.getElementById('sideRef').removeAttribute('style');
         document.getElementById('sideRef').dataset.show='0';
-
     }
 }
 
