@@ -3,6 +3,8 @@
   width: 35%;
   border-radius: 10px;
   padding: 5px;
+  margin: 10px 0px;
+  clear: both;
 }
 .newMessege .messege {
   width: 100%;
@@ -28,11 +30,9 @@
   background-color: #999;
   color: #000;
   float: left;
-  clear: both;
 }
 
 .newMessegeOther {
   background-color: #333;
   float: right;
-  clear: both;
 }/*# sourceMappingURL=chat.css.map */
