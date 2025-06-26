@@ -8,10 +8,8 @@ export default function Main() {
   return <>
   <div className="h-full w-full overflow-hidden">
     <ChatHeader />
-    <MessageProvider>
       <ChatBody />
       <ChatFooter />
-    </MessageProvider>
     
   </div>
   </>

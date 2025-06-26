@@ -10,7 +10,7 @@ export const MessageProvider = ({ children }) => {
 
     const [user] = useState(() => {
 		const localStorageEpisodes = localStorage.getItem('USER-TELEGRAM');
-		return localStorageEpisodes ? JSON.parse(localStorageEpisodes) : [];
+		return localStorageEpisodes ? JSON.parse(localStorageEpisodes) : JSON.parse({"id":1749809637393,"name":"mohamed elsayed ibrahim","password":"0115323395@Dmo","email":"mlovely9316@gmail.com","url":"/src/components/chat/parts/side/img/avatar2.png"});
 	});
 
     const [replayMessage, setReplayMessage] = useState("");
