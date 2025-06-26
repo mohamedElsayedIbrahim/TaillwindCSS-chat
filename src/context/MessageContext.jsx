@@ -8,7 +8,7 @@ export const MessageContext = createContext('');
 
 export const MessageProvider = ({ children }) => {
 
-    const [user, setUser] = useState(() => {
+    const [user] = useState(() => {
 		const localStorageEpisodes = localStorage.getItem('USER-TELEGRAM');
 		return localStorageEpisodes ? JSON.parse(localStorageEpisodes) : [];
 	});
@@ -20,6 +20,7 @@ export const MessageProvider = ({ children }) => {
     const [replayIndex, setReplayIndex] = useState(null);
     
     const [isEdit, setIsEdit] = useState(false);
+    const [editIndex, setEditIndex] = useState(-1);
 
 
     const [inputEmpty, setInputEmpty] = useState(true);
@@ -116,7 +117,7 @@ export const MessageProvider = ({ children }) => {
 
     return <>
 
-        <MessageContext.Provider value={{ messages, chatMessage, handleChatMessage, sendMessage, handleEnterKeyPress }}>
+        <MessageContext.Provider value={{ messages, chatMessage,user, handleChatMessage, sendMessage, handleEnterKeyPress }}>
 
             {children}
 

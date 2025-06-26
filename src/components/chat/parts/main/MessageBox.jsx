@@ -1,4 +1,3 @@
-import './style/chat.css';
 
 export default function MessageBox({message, messagePostaion}) {
 

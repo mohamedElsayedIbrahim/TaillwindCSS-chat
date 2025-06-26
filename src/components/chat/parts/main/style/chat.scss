@@ -1,5 +1,6 @@
 .newMessege {
     display: flex;
+
     .messege {
         width: 35%;
         border-radius: 10px;
@@ -30,7 +31,8 @@
 
 
 .newMessegeMy {
-    justify-content: start;
+    justify-content: end;
+
     .messege {
         background-color: #999;
         color: #000;
@@ -38,9 +40,32 @@
 }
 
 .newMessegeOther {
-    justify-content: end;
+    justify-content: start;
 
     .messege {
         background-color: #333;
+    }
+}
+
+.scroll-custom {
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #a5a5a5;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #030a2d;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #030a2d;
     }
 }
